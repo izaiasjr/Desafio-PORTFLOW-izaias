@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap'); 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    font-family: 'Montserrat', sans-serif; 
+    color: black;
+    text-decoration:none;
+    scroll-behavior: smooth;
+
+}
+header{
+    width: 100%;
+    margin: 0 auto;
+    position: fixed;
+    top:0px;
+    z-index: 99999;
+    background: white;
+}
+.caixa-nav button{
+    border: none;
+    color: white;
+    background: black;
+    font-size: 25px;
+    width: 150px;
+    display: none; 
+}
+.caixa-nav{
+    width: 100%;
+    display: flex;
+    padding: 2em 1em;
+   
+}
+.div-logo{
+    width: 15%;
+    padding-left: 4%;
+}
+
+.menu{
+    width: 80%;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: end;
+}
+.menu li:hover{
+    cursor: pointer;
+    font-weight: bold;
+}
+.laranja-azul{
+    width: 100%;
+    height:29em;
+    background-image: url("imagem/Azul.png");
+    background-repeat: no-repeat;   
+    Background-size: cover;
+}
+.div-imagem {
+    width: 90%;
+    color: white;
+    position: relative;
+    left: 2.5em;
+    top: 10em;
+}
+.div-imagem h2 {
+    color: white;
+    font-size:2.5rem ;
+}
+.div-imagem p{
+    color: white;
+    padding-top: 2em;
+    font-size:1.5rem ;
+}
+.flex-container{
+    width: 100%;
+    margin-top: 2em;
+    margin: 0 auto;
+}
+.fig-imagem{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+.fig-imagem img{
+    width: 25%;
+    padding:0.5em;   
+}
+.mae{
+    display: flex;
+    width:100%;
+}
+
+.filho-1{
+    display: flex;
+    margin-left: 17vw;
+    width: 348px;
+    justify-content: space-evenly;
+}
+.filho-1 img{
+    width: 30px;
+    height: 30px;
+    object-fit: contain;
+}
+.div-footer{
+    display: flex;
+}
+.filho-2{
+    display: flex;
+    margin-left: 7vw;
+}
+p{
+    margin-left: 2vw;
+    font-weight: 300;
+    width: 60%;
+}
+.btn{
+    background:#333333;
+    color:#CCCCCC;
+    padding: 5px 20px;
+    border: none;
+    
+}
+.div-btn{
+    align-self: center;
+    display: none;
+}
+
+
+/* aqui começa o @media */
+@media (max-width:994px){
+    .laranja-azul{
+        width: 100%;
+        height: 40em;
+        background-position-x:80%;
+    }
+    footer{
+        display: none;
+    }
+}
+@media (max-width:770px){
+    .caixa-nav{
+        width: 100%;
+        padding: 0;
+        display: flex;
+    }
+    .caixa-nav button{
+        display: initial;
+    }
+    .caixa-nav ul{
+        display: none;
+    }
+    .div-logo {
+        display: flex;
+        width: 50%;
+    }
+    .div-logo h2{
+        padding-left: 1.5em;
+    }
+    .div-imagem{
+        top:15em;
+    }
+        .div-imagem h2{
+            width: 3em;
+        }
+        .div-imagem p{
+            font-size: 1rem;
+        }
+        .fig-imagem{
+            flex-direction: column;
+
+        }
+        .fig-imagem img{
+            width: 80%;
+        }
+
+        .imgem-01{
+            order: -14;
+        }
+        .imgem-02{
+            order: -13;
+        }
+        .imgem-03{
+            order: -12;
+        }
+        .imgem-04{
+            order: -11;
+        }
+        .imgem-05{
+            order: -10;
+        }
+        .imgem-06{
+            order: -09;
+        }
+        .imgem-07{
+            order: -08;
+        } 
+        .imgem-08{
+            order: -07;
+        }
+        .imgem-09{
+            order: -06;
+        }
+        .imgem-10{
+            order: -05;
+        }
+        .imgem-11{
+            order: -04;
+        }
+        .imgem-12{
+            order: -03;
+        }
+        footer{
+            display: block;
+            padding: 2%;
+          
+        }
+         .mae{
+            width:78%;
+            height: 50%;
+            margin: 0 auto;
+            align-items: center;
+            flex-direction: column;
+            
+        } 
+        .filho-1 img{
+            width: 30px;
+            margin-left: 15px;
+        }
+        .filho-1{
+            justify-content: center;
+            margin-left: 0;
+            background: #7FDBD4;
+        }
+        .filho-2  {
+            margin-left: 0 ;
+            flex-direction: column;           
+        }
+        .filho-2 p{
+            width:60%;
+            word-break: break-all;
+            font-size:10px;
+             margin-left: 0; 
+        }
+        .copy{
+            font-size:15px;
+        }
+        .div-btn{
+            display: block;
+        }
+        .div-footer{
+            padding-top: 20px;
+        }
+    }    
